@@ -1,9 +1,9 @@
 class Carl < Formula
   desc "Computer ARithmetic and Logic library"
   homepage "https://github.com/smtrat/carl"
-  url "https://github.com/smtrat/carl/archive/c++14-18.12.zip"
-  version "18.12"
-  sha256 "6b77f0e7f5101416cf0f5b16975463924224cbdf7409f44dbb83608ae419eb4f"
+  url "https://github.com/smtrat/carl/archive/c++14-19.11.zip"
+  version "19.11"
+  sha256 "4a239cf48981cba70ca86acefc77e4582d4167d7bc2901c35cc3cbb9cffdc11c"
 
   head "https://github.com/smtrat/carl.git", :using => :git, :branch => "master14"
 
