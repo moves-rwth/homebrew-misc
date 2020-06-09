@@ -1,19 +1,19 @@
 class Carl < Formula
   desc "Computer ARithmetic and Logic library"
   homepage "https://github.com/smtrat/carl"
-  url "https://github.com/smtrat/carl/archive/c++14-19.11.zip"
+  url "https://github.com/smtrat/carl/archive/c++14-19.11.tar.gz"
   version "19.11"
-  sha256 "4a239cf48981cba70ca86acefc77e4582d4167d7bc2901c35cc3cbb9cffdc11c"
+  sha256 "139b7abe0dc5114b598881c8fd66c8c820f57507debd9fa92c8b16ce736dd471"
 
   head "https://github.com/smtrat/carl.git", :using => :git, :branch => "master14"
 
   option "with-thread-safe", "Build with thread-safe support"
 
-  depends_on :macos => :mavericks
-  depends_on "cmake"
   depends_on "boost"
-  depends_on "gmp"
+  depends_on "cmake"
   depends_on "eigen"
+  depends_on "gmp"
+  depends_on :macos => :mavericks
   depends_on "cln" => :optional
   depends_on "ginac" => :optional
   depends_on "moves-rwth/misc/cocoalib" => :optional
