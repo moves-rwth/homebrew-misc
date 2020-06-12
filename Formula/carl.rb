@@ -13,7 +13,6 @@ class Carl < Formula
   depends_on "cmake"
   depends_on "eigen"
   depends_on "gmp"
-  depends_on :macos => :mavericks
   depends_on "cln" => :optional
   depends_on "ginac" => :optional
   depends_on "moves-rwth/misc/cocoalib" => :optional

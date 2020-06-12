@@ -5,7 +5,6 @@ class Cocoalib < Formula
   version "0.99555"
   sha256 "0a7d96789885027c7fcb875f281aadb613ab5e7ff6e1f233abbf2c499136c517"
 
-  depends_on :macos => :mavericks
   depends_on "gmp" => ["c++11"]
 
   def install
