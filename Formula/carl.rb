@@ -1,9 +1,9 @@
 class Carl < Formula
   desc "Computer ARithmetic and Logic library"
   homepage "https://github.com/smtrat/carl"
-  url "https://github.com/smtrat/carl/archive/c++14-19.11.tar.gz"
-  version "19.11"
-  sha256 "139b7abe0dc5114b598881c8fd66c8c820f57507debd9fa92c8b16ce736dd471"
+  url "https://github.com/smtrat/carl/archive/c++14-20.09.tar.gz"
+  version "20.09"
+  sha256 "62695b339d851800a61aeb289deef11093b642c7b6aeee1f4f48c298d8cf5b35"
 
   head "https://github.com/smtrat/carl.git", :using => :git, :branch => "master14"
 
@@ -21,6 +21,7 @@ class Carl < Formula
     args = %w[
       -DEXPORT_TO_CMAKE=OFF
       -DCMAKE_BUILD_TYPE=RELEASE
+      -DEXCLUDE_TESTS_FROM_ALL=ON
     ]
     args << "-DTHREAD_SAFE=ON" if build.with?("thread-safe")
     args << "-DUSE_CLN_NUMBERS=ON" if build.with?("cln")
