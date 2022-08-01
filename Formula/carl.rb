@@ -1,11 +1,11 @@
 class Carl < Formula
   desc "Computer ARithmetic and Logic library"
-  homepage "https://github.com/smtrat/carl"
-  url "https://github.com/smtrat/carl/archive/c++14-20.09.tar.gz"
+  homepage "https://ths-rwth.github.io/carl/"
+  url "https://github.com/smtrat/carl/archive/c++14-22.01.tar.gz"
   version "20.09"
-  sha256 "62695b339d851800a61aeb289deef11093b642c7b6aeee1f4f48c298d8cf5b35"
+  sha256 "d8b07f8fe8a47c7c8ff119762b9c857d74fa25b548a2eb057f68ea2b075d9163"
 
-  head "https://github.com/smtrat/carl.git", :using => :git, :branch => "master14"
+  head "https://github.com/ths-rwth/carl.git", using: :git, branch: "master14"
 
   option "with-thread-safe", "Build with thread-safe support"
 
